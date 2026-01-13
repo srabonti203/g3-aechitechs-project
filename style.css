@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* universal style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+}
+/* shared style */
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.max-width {
+  max-width: 74%;
+  margin: 0 auto;
+}
+.header-footer-bg {
+  background: rgba(255, 144, 14, 0.1);
+}
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+.btn-yellow {
+  width: 180px;
+  height: 64px;
+  padding: 24px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 144, 14, 1);
+  color: white;
+  font-size: 1rem;
+}
+/* header styles */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgba(66, 66, 66, 1);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  cursor: pointer;
+}
+.nav-links {
+  gap: 5rem;
+}
+.header-content {
+  justify-content: space-between;
+}
+.logo {
+  width: 18.9rem;
+  color: rgba(19, 19, 19, 1);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+}
+/* banner styles */
+.banner {
+  margin-top: 6.4rem;
+}
+.banner-text {
+  text-align: center;
+  max-width: 862px;
+  margin: 0 auto;
+}
+.banner-text h1 {
+  color: rgba(19, 19, 19, 1);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.7rem;
+  margin-bottom: 1.5rem;
+}
+.banner-text p {
+  color: rgba(114, 114, 114, 1);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+.banner-image img {
+  margin-bottom: 2.8rem;
+  width: 100%;
+}
+.by1 {
+  margin-top: 2rem;
+  margin-bottom: 3.1rem;
+}
+/* main styles */
+
+/* quick list style */
+.quick-list {
+  margin-top: 4rem;
+  margin-bottom: 8.1rem;
+  gap: 4.8rem;
+}
+.quic-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.quic-image img {
+  width: 100%;
+}
+.quick-text {
+  max-width: 537px;
+}
+.quick-text h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.3rem;
+  margin-bottom: 1.5rem;
+}
+.s1 {
+  color: rgba(114, 114, 114, 1);
+}
+.s2 {
+  color: black;
+  font-weight: bold;
+}
+.s3 {
+  color: rgba(255, 144, 14, 1);
+  font-weight: bold;
+}
+.quick-text p {
+  color: rgba(114, 114, 114, 1);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+/* footer styles */
+/* mobile device styles */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .quick-list {
+    flex-direction: column;
+  }
+  .quic-image {
+    gap: 3.5rem;
+  }
+  .quick-text {
+    text-align: center;
+  }
+  .by2 {
+    margin-left: 11rem;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .max-width {
+    max-width: 82%;
+  }
+  .nav-links {
+    gap: 4rem;
+  }
+  /* quick-list style */
+  .quick-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .display-flex {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 20px;
+  }
+  .banner {
+    margin-top: 2.4rem;
+  }
+  .banner-text h1 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+  .btn-yellow {
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .banner-image img {
+    margin-bottom: 1.8rem;
+  }
+  /* quick-list style */
+  .quick-list {
+    gap: 2.5rem;
+  }
+  .quic-image {
+    gap: 0.5rem;
+  }
+  .quick-text h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .quick-text p {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .display-flex {
+    flex-direction: column;
+  }
+  .nav-links {
+    text-align: center;
+    gap: 1rem;
+    padding: 1.31rem;
+  }
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+  }
+  .banner {
+    margin-top: 0.4rem;
+  }
+  .banner-text h1 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-yellow {
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .banner-image img {
+    margin-bottom: 0.8rem;
+  }
+  /* quick-list style */
+  .quic-image {
+    grid-template-columns: 1fr;
+  }
+  .quick-text h2 {
+    margin-bottom: 0.5rem;
+  }
+  .quick-text p {
+    margin-bottom: 1rem;
+  }
+}
